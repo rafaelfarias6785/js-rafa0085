@@ -1,1 +1,50 @@
-<div id="app"></div>
+<html>
+
+<head>
+<!-- css -->
+<style>
+    span {
+        color: blue;
+        font-weight: bold;
+    }
+
+    input {
+        background-color: bisque;
+    }
+</style>
+
+   
+   
+   
+   
+    <meta charset="UTF-8" />
+    <title> Calculadora de IMC</title>
+</head>
+
+<body>
+    <h2> Calculadora de IMC</h2>
+    <hr>
+<input type="text" id="txtNome" placeholder="Digite seu Nome"/>         <br/>
+<input type="number" id="numPeso" placeholder="Digite seu Peso"/>       <br/>
+<input type="number" id="numAltura" placeholder="Digite sua Altura"/>   <br/>
+<button type="button" id="calcular"> Calcular  </button><br />
+<button type="button" id="relatorio"> Gerar Relatorio  </button><br />
+    <hr>
+
+    <p>
+    Nome: <span id="nome"></span> <br />
+    Peso: <span id="peso"></span> <br />
+    Altura: <span id="altura"></span> <br />
+    IMC: <span id="imc"></span> <br />
+    Situação: <span id="situacao"></span> <br />
+    </p>
+
+    <hr>
+    <ol id="listaNumerada"></ol>
+
+</body>
+
+<script src='js/funcoes.js'></script>
+<script src='js/controller.js'></script>
+
+</html>
